@@ -4,6 +4,7 @@
 * Set up
 * Test cases for password hashing application
 * Defects in password hashing application
+* Automation for POST to /hash and GET to /hash
 
 ## General info
 The following is the requirement specification that was used in building the password hashing
@@ -76,3 +77,6 @@ PORT. Remember to reopen your cmd window after doing this.
 
 ## Defects
 ** Defects are created under issues tab and marked it as prioriry in order to sort it easily
+
+## Automation
+** have added jmx file which has automation for POST to /hash and GET to /hash
