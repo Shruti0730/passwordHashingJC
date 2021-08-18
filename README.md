@@ -34,7 +34,26 @@ password hashing to complete, reject any new requests, respond with a 200 and sh
 	
 	
 ## Setup
-Password Hashing Application Execution:
+Obtaining the Password Hashing Application
+We are storing the password hashing application in a public S3 bucket. You can get it in the
+following manner:
+
+**Mac/Linux example:**
+
+$ wget --no-check-certificate --no-proxy
+‘https://s3.amazonaws.com/qa-broken-hashserve/broken-hashserve.tgz’
+
+**Windows example:**
+
+On modern Windows systems with PowerShell 3.x, curl/wget/iwr are just aliases for
+Invoke-WebRequest. It has equivalent curl/wget/iwr parameters and output; they are just
+named different things. On Windows 10, you will also need to install 7zip or equivalent
+extraction tool to unpack the *.tgz archive.
+C:/> iwr -Uri https://s3.amazonaws.com/qa-broken-hashserve/broken-hashserve.tgz
+-UseBasicParsing -o ./broken-hashserve.tgz
+
+**Password Hashing Application Execution:**
+
 The broken-hashserve.tgz archive contains binaries for Linux, Windows & Mac OS
 X operating systems. Unpack and use the binary corresponding to your OS of choice.
 You must set a PORT environment variable before executing the application. It will
