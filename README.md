@@ -1,6 +1,7 @@
 # passwordHashingJC
 ## Table of contents
 * Password Hashing Application Overview
+* Set up
 * Test cases for password hashing application
 * Defects in password hashing application
 
@@ -69,3 +70,9 @@ $ export PORT=8088
 1. C:/> SET PORT=8088
 2. Use the Control Panel to set a System or User variable for
 PORT. Remember to reopen your cmd window after doing this.
+
+## Test Cases
+**Test cases are uploaded as excel spread sheet which cover positive, negative and edge case scenarios.
+
+## Defects
+** Defects are created under issues tab and marked it as prioriry in order to sort it easily
